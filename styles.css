@@ -47,13 +47,35 @@ h1{
   text-align:center;
 }
 
-
-h2{
+.welcometext{
   color:#9B6A6C;
   font-family: "Warbler";
+  font-weight: bold;
+  text-align:center;  
+  margin-bottom: 1rem;
+  font-size:2em;
+  }
+
+  h2{
+  color:#9B6A6C;
+  font-family: "Warbler";
+  margin-bottom: 1rem;
+  font-size:1em;
   text-align: center;
 }
 
+button {
+  margin:auto;
+  padding: 0.5rem;
+  border:none;
+  border-radius:30px;
+  font-size: 0.75em;
+  cursor: pointer;
+  color: white;
+  background-color: #0A2245;
+  font-family: "Dashiell fine";
+  align-content: center;
+}
 
 .paragraph {
     margin-left: 1rem;
@@ -170,7 +192,7 @@ h3{
   text-align: left;
 }
 
-.design{
+.gallery-container{
   display:grid;
   grid-template-columns: 1fr;
   place-content: center;
@@ -180,7 +202,7 @@ h3{
   padding: 1rem;
 }
 
-.design img{
+.gallery-container img{
     border-radius: 0px;
     width:80%;
     
@@ -205,6 +227,214 @@ h3{
 }
 
 }
+
+@media only screen and (min-width: 600px) {
+  body {
+    margin: 2rem; 
+    background-color:#FAFAFA ;
+  }
+
+
+pre{
+  font-family:'Ogg';
+  font-size:5em;
+  color:#9B6A6C;
+  margin-bottom:1.5rem;
+  margin-left:2rem;
+  text-align:center;
+ line-height: 1em;
+
+}
+
+h1{
+  font-family:'Ogg';
+  font-size:5em;
+  color:#9B6A6C;
+  margin-bottom:2rem;
+  text-align:center;
+}
+
+.welcometext{
+  color:#9B6A6C;
+  font-family: "Warbler";
+  font-weight: bold;
+  text-align:center;  
+  margin-bottom: 2rem;
+  font-size:3em;
+  }
+
+  h2{
+  color:#9B6A6C;
+  font-family: "Warbler";
+  margin-bottom: 2rem;
+  font-size:2em;
+  text-align: left;
+}
+
+button {
+  margin:auto;
+  padding: 1rem;
+  border:none;
+  border-radius:30px;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  background-color: #0A2245;
+  font-family: "Dashiell fine";
+  align-content: center;
+}
+
+.paragraph {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .navbar{
+  display: flex;
+  flex-wrap:wrap; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color:#eeeeff;
+  font-family: "Dashiell fine";
+  width:80%;
+  margin: 2rem auto;
+
+}
+
+.navbar a{
+  color:#7F7CAF;
+  font-size: 2em;
+  padding:0.75rem;
+  text-decoration:none;
+}
+
+.button-link, .last {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color:#eeeeff;
+    text-align:center;
+    color:#7F7CAF;
+    line-height: 2em;
+    font-size: 2em;
+    text-decoration: none;
+    font-family: "Dashiell fine";
+    border-radius: 2rem;
+    margin-bottom:1.5rem;
+  }
+
+.photos {
+  display: grid;
+  grid-template-columns: 0.25fr ;
+  gap: 1rem;
+place-content: center
+}
+
+
+.photos img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius:50%;
+}
+
+p{
+
+  font-family: "Crimson";
+  color:#0A2245;
+  font-size:1.75em;
+
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 2rem;
+  font-family: "Dashiell fine";
+  gap:1rem;
+  margin-bottom: 2rem;
+}
+
+.text p{
+  margin-bottom:2rem;
+}
+
+.button{
+    display: block;
+    width: 90%;
+    background-color:#eeeeff;
+    text-align:center;
+    align-items: center;
+    color:#7F7CAF;
+    font-size: 2em;
+    padding-top: 1rem;
+  padding-bottom: 1rem;
+    text-decoration: none;
+    font-family: "Dashiell fine";
+    border-radius: 2rem;
+}
+
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+}
+
+h3{
+   font-family: "Dashiell fine";
+   font-size: 1.5em;
+   color:#9B6A6C;
+}
+
+.paragraph{
+  margin-bottom:2rem;
+  text-align: left;
+}
+
+.gallery-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  place-items:center;
+  width:100%;
+  gap:1rem;
+  padding: 1rem;
+}
+
+.gallery-container img{
+    border-radius: 0px;
+    width:80%;
+    
+}
+
+.contact{
+  display:grid;
+  grid-template-columns: 1fr;
+  place-items:center;
+  place-content:center;
+  width:90%;
+  margin-left: 1rem;
+}
+
+.footer a, footer{
+  font-family: "Crimson";
+  position:static;
+  font-size:1em;
+  color:#9B6A6C;
+  text-align: right;
+  margin-top:10rem;
+}
+
+}
+
 
 /*desktop*/
 @media only screen and (min-width:1024px){
@@ -276,11 +506,14 @@ h1{
   font-size:35px;
   }
 
+
 h2{
   color:#9B6A6C;
   font-family: "Warbler";
   margin-bottom: 1rem;
   font-size:1em;
+  text-align: left;
+
 }
 
 button {
