@@ -1,0 +1,538 @@
+@font-face{
+  font-family: Dashiell fine;
+  src: url(./Fonts/dashiellfine-xbold.otf);
+}
+
+@font-face{
+  font-family: Warbler;
+  src: url(./Fonts/Warbler.otf);
+}
+
+@font-face{
+  font-family: Crimson;
+  src:url(./Fonts/Crimson-Roman.otf);
+
+
+}
+@font-face{
+  font-family: Ogg;
+  src: url(./Fonts/Ogg.ttf);
+}
+
+
+@media only screen and (max-width: 600px){
+  
+  body {
+    margin: 1rem; 
+    background-color:#FAFAFA ;
+  }
+
+
+pre{
+  font-family:'Ogg';
+  font-size:3.5em;
+  color:#9B6A6C;
+  margin-bottom:1.5rem;
+  margin-left:1rem;
+  text-align:center;
+ line-height: 1em;
+
+}
+
+h1{
+  font-family:'Ogg';
+  font-size:3.5em;
+  color:#9B6A6C;
+  margin-bottom:1.5rem;
+  text-align:center;
+}
+
+
+h2{
+  color:#9B6A6C;
+  font-family: "Warbler";
+  text-align: center;
+}
+
+
+.paragraph {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+
+  .navbar{
+  display: flex;
+  flex-wrap:wrap; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color:#eeeeff;
+  font-family: "Dashiell fine";
+  width:80%;
+  margin: 1rem auto;
+
+}
+
+.navbar a{
+  color:#7F7CAF;
+  font-size: 1em;
+  padding:0.75rem;
+  text-decoration:none;
+}
+
+.button-link, .last {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color:#eeeeff;
+    text-align:center;
+    color:#7F7CAF;
+    line-height: 4em;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: "Dashiell fine";
+    border-radius: 2rem;
+    margin-bottom:1.5rem;
+  }
+
+.photos {
+  display: grid;
+  grid-template-columns: 0.25fr ;
+  gap: 1rem;
+place-content: center
+}
+
+
+.photos img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius:50%;
+}
+
+p{
+
+  font-family: "Crimson";
+  color:#0A2245;
+  font-size:1em;
+
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 2rem;
+  font-family: "Dashiell fine";
+  gap:1rem;
+  margin-bottom: 2rem;
+}
+
+.text p{
+  margin-bottom:2rem;
+}
+
+.button{
+    display: block;
+    width: 90%;
+    background-color:#eeeeff;
+    text-align:center;
+    align-items: center;
+    color:#7F7CAF;
+    font-size: 1em;
+    padding-top: 1rem;
+  padding-bottom: 1rem;
+    text-decoration: none;
+    font-family: "Dashiell fine";
+    border-radius: 2rem;
+}
+
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+}
+
+h3{
+   font-family: "Dashiell fine";
+   font-size: 1.5em;
+   color:#9B6A6C;
+}
+
+.paragraph{
+  margin-bottom:2rem;
+  text-align: left;
+}
+
+.design{
+  display:grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  place-items:center;
+  width:100%;
+  gap:1rem;
+  padding: 1rem;
+}
+
+.design img{
+    border-radius: 0px;
+    width:80%;
+    
+}
+
+.contact{
+  display:grid;
+  grid-template-columns: 1fr;
+  place-items:center;
+  place-content:center;
+  width:90%;
+  margin-left: 1rem;
+}
+
+.footer a, footer{
+  font-family: "Crimson";
+  position:static;
+  font-size:1em;
+  color:#9B6A6C;
+  text-align: right;
+  margin-top:10rem;
+}
+
+}
+
+/*desktop*/
+@media only screen and (min-width:1024px){
+
+body{
+  background-color:#FAFAFA;
+  margin:3rem;
+}
+
+
+.navbar{
+  display: flex;
+  position: sticky;
+  top: 5px;
+  z-index: 1000;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color:#eeeeff;
+  font-family: "Dashiell fine";
+  width:100%;
+  margin:0 auto;
+
+}
+
+.navbar a{
+  color:#7F7CAF;
+  font-size: 20px;
+  padding:12px;
+  text-decoration:none;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover{
+   color:white;
+   background-color: #0A2245;
+}
+
+.navbar a:active{
+   text-transform: uppercase;
+  }
+
+pre{
+  font-family:'Ogg';
+  font-size:80px;
+  color:#9B6A6C;
+  margin-bottom:20px;
+  margin-left:5rem;
+  line-height: 1em
+
+}
+
+h1{
+  font-family:'Ogg';
+  font-size:80px;
+  color:#9B6A6C;
+  margin-bottom:2.5rem;
+  margin-left:5rem;
+}
+
+
+.welcometext{
+  color:#9B6A6C;
+  font-family: "Warbler";
+  font-weight: bold;
+  margin-left:5rem;
+  margin-bottom: 2.5rem;
+  font-size:35px;
+  }
+
+h2{
+  color:#9B6A6C;
+  font-family: "Warbler";
+  margin-bottom: 1rem;
+  font-size:1em;
+}
+
+button {
+  padding: 12px;
+  margin: 0.25rem;
+  border:none;
+ border-radius:30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: #0A2245;
+  font-family: "Dashiell fine";
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+p{
+
+  font-family: "Crimson";
+  color:#0A2245;
+  font-size:1em;
+
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr;
+	gap: 15px;
+  float:right;
+  margin-right:70px;
+}
+
+.photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius:50%;
+    transition: all 0.5s ease;
+}
+
+.photos img:hover{
+	transform:scale(1.2);
+}
+
+.button-link, .last {
+		display: block;
+		margin-left: 5rem;
+  	width: 200px;
+  	height: 60px;
+  	background-color:#eeeeff;
+  	text-align:center;
+  	color:#7F7CAF;
+  	line-height: 60px;
+  	font-size: 16px;
+  	text-decoration: none;
+  	font-family: "Dashiell fine";
+  	transition: all 0.5s ease;
+    border-radius: 50px;
+  }
+
+  .button-link:hover, .last:hover{
+  	background-color: #0A2245;
+  	color: white;
+    transform:scale(1.2);
+  }
+
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 40px;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 30px;
+  font-family: "Dashiell fine";
+  width:100%;
+  gap:1rem;
+}
+
+.text p{
+  margin-bottom:2rem;
+
+}
+
+.button{
+    display: block;
+    width: 100%;
+    background-color:#eeeeff;
+    text-align:center;
+    align-items: center;
+    color:#7F7CAF;
+    font-size: 18px;
+    padding-top: 15px;
+  padding-bottom: 15px;
+    text-decoration: none;
+    font-family: "Dashiell fine";
+    transition: all 0.5s ease;
+    border-radius: 30px;
+}
+
+ .button:hover{
+    background-color: #0A2245;
+    color: white;
+  }
+
+
+.home{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin-top:4rem;
+}
+
+img{
+
+    border-radius: 50px;
+}
+
+h3{
+   font-family: "Dashiell fine";
+   font-size: 25px;
+   color:#9B6A6C;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 40px;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px;
+
+}
+
+.gallery-container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  overflow:hidden;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  gap:15px;
+  background-color: rgba(155, 106, 108, 0.8);
+  padding: 1rem;
+  gap:15px;
+
+}
+
+.gallery-item {
+  width: calc((100% - 30px) / 3);
+    margin-bottom: 10px;
+    opacity: 1;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    opacity: 0.5;
+}
+.gallery-item img {
+    width: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+.gallery-content {
+    font-size: .8em;
+}
+
+.lightbox {
+    position: fixed;
+    display: none;
+    background-color:rgba(155, 106, 108, 0.5);
+    width: 100%;
+    height: 100%;              
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+.lightbox-content {
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+.lightbox-content img {
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background-color: rgba(155, 106, 108, 0.9);
+    color: #fff;
+    padding: 7px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: .5;
+}
+
+.paragraph{
+  margin-left:5rem;
+  margin-right:5rem;
+  margin-bottom:2rem;
+}
+
+.item10{
+  grid-column-start:1;
+  grid-column-end: 3;
+}
+
+.contact{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  place-items:center;
+  place-content:center;
+}
+
+.footer a, footer{
+  font-family: "Crimson";
+  position:static;
+  font-size:12px;
+  color:#9B6A6C;
+  text-align: right;
+  margin-top:150px;
+}
+
+
+}
