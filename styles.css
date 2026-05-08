@@ -484,7 +484,8 @@ pre{
   color:#9B6A6C;
   margin-bottom:20px;
   margin-left:5rem;
-  line-height: 1em
+  line-height: 1em;
+  text-align: left;
 
 }
 
@@ -504,6 +505,7 @@ h1{
   margin-left:5rem;
   margin-bottom: 2.5rem;
   font-size:35px;
+  text-align: left;
   }
 
 
@@ -513,6 +515,7 @@ h2{
   margin-bottom: 1rem;
   font-size:1em;
   text-align: left;
+  text-align:left;
 
 }
 
